@@ -9,9 +9,18 @@
 	</head>
 	<body>
 		<header>
+			<h2 id="name">Hello Unknown User</h2>
 			<h1>Guess My Number!</h1>
-			<p class="between">(Between 1 and 100)</p>
-			<button class="btn again">Again!</button>
+			<h3 id="question">Click ? to reveal the number!</h3>
+			<p class="between">(Between 1 and 50)</p>
+			<div id="select">
+				<h2 class="diff" for="difficulty">difficulty:</h2>
+				<select name="difficulty" id="difficulty" required>
+					<option value="hard">Hard</option>
+					<option value="normal">Normal</option>
+					<option value="easy">Easy</option>
+				</select>
+			</div>
 			<div class="number">?</div>
 		</header>
 		<main>
@@ -22,18 +31,13 @@
 			<section class="right">
 				<p class="message">Start guessing...</p>
 
-				<div id="select">
-					<label for="difficulty">difficulty:</label>
-					<select name="difficulty" id="difficulty" required>
-						<option value="hard">Hard</option>
-						<option value="normal">Normal</option>
-						<option value="easy">Easy</option>
-					</select>
-				</div>
-
 				<p class="label-score">Tries Left: <span class="score">10</span></p>
 				<p class="label-highscore">
 					🥇 Highscore: <span class="highscore">0 Tries</span>
+				</p>
+				<button class="btn again">Play Again!</button>
+				<p class="i-block">
+					<a class="instructions" href="rules.html">How to Play!</a>
 				</p>
 			</section>
 		</main>
